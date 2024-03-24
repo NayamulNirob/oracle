@@ -26,7 +26,6 @@ WHERE SUBSTR(job_id,1,2)='IT'
 
 
 SELECT first_name,job_id,
-lower((CONCAT(SUBSTR(job_id,2,2),(first_name,2,2)))
-
-     FROM employees;
+lower(CONCAT(SUBSTR(job_id,2,2),SUBSTR(first_name,2,2)))
+FROM employees;
      
