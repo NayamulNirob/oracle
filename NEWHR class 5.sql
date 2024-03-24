@@ -71,4 +71,9 @@ FROM employees;
 
 SELECT department_name||q'[Department's Manager Id:]'||manager_id AS "Department and Manager"
 from departments;
+
+SELECT first_name,job_id,
+lower(CONCAT(SUBSTR(job_id,2,2),SUBSTR(first_name,2,2)))
+FROM employees;
+
      
