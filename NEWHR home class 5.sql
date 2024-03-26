@@ -59,16 +59,20 @@ SELECT *
 FROM employees
 where substr(job_id,1,2)='IT'
 
-select employee_id,concat(first_name,last_name)Name,
-length (last_name),instr(last_name,'a')"Contains 'a'?"
+select employee_id,concat(first_name,last_name)Name,first_name,last_name,
+length (last_name),instr(last_name,'e')"Contains 'e'?"
 from employees
 where substr(last_name,-1,1)='n';
 
 SELECT last_name,job_id,
-lower(concat( substr(last_name,1,3), substr(job_id,1,2)))
+upper(concat( substr(last_name,1,3), substr(job_id,1,2)))
 FROM employees;
 
 
-SELECT department_name||q'[Department's Manager Id:]'||manager_id AS "Department and Manager"
+SELECT department_name||q'[Department's Manager Id:]'||manager_id AS "Department
+and Manager"
 from departments;
+
+SELECT substr(employee_id,1,3) ||Upper(substr(first_name,1,3))
+FROM employees;
      
