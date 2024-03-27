@@ -17,3 +17,7 @@ select last_name,salary,commission_pct,
 NVL2(commission_pct, salary + (salary * commission_pct), salary)as "New salary"
 from employees;
 
+select *
+from employees
+where job_id in('SA_REP','MK_MAN') and salary >10000 and salary<40000;
+
