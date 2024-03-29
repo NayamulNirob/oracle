@@ -40,7 +40,6 @@ HAVING SUM(salary)>13000
 ORDER BY sum(salary);
 
 
-
 select to_char(hire_date,'YYYY')
 from employees
 group by to_char(hire_date,'YYYY')
@@ -55,3 +54,7 @@ select job_id, AVG(salary)
 From employees
 GROUP BY job_id
 HAVING MAX(salary) >10000;
+
+
+
+
