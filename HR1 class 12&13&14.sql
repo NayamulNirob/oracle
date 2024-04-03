@@ -22,15 +22,14 @@ SELECT e.first_name,e.last_name,e.salary,j.job_title
 from employees e
 join jobs j on e.job_id=j.job_id;
 
-select employees.first_name,departments.department_name,
+select first_name,department_name,
 job_id,city,country_name,region_name
 from employees
 natural join departments
 natural join jobs
 natural join locations
 natural join countries
-natural join regions
-Natural join job_history;
+natural join regions;
 
 
 select *
