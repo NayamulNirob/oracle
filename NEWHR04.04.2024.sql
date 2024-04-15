@@ -61,7 +61,3 @@ SELECT last_name, hire_date,
 to_char(next_day(add_months(hire_date,6),'Monday') ,
 'fmDay,"The" Ddspth "of" month,YYYY')REVIEW
 from employees;
-
-
-
-       
