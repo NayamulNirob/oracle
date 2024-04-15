@@ -64,4 +64,6 @@ group by job_id;
 SUM(salary) "Total"
 FROM employees
 group by job_id;
+
+
     
