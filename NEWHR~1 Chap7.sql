@@ -19,15 +19,17 @@ SELECT
  join locations l on l.location_id = d.location_id
  WHERE l.city = '&city';
  
- SELECT e.last_name "Employee", e.employee_id "EMP#",m.last_name "Manager",
+ SELECT e.last_name "Employee", e.employee_id "EMP#",
+ m.last_name "Manager",
     m.manager_id "Mgr#"
       FROM employees e
       join employees m on m.employee_id = e.manager_id; 
       
- SELECT e.last_name "Employee", e.employee_id "EMP#",m.last_name "Manager",
+ SELECT e.last_name "Employee", e.employee_id "EMP#",
+ m.last_name "Manager",
     m.manager_id "Mgr#"
       FROM employees e
-      LEFT  JOIN employees m
+      LEFT OUTER JOIN employees m
      on m.employee_id = e.manager_id
      order by 2; 
      
