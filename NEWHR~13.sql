@@ -1,1 +1,4 @@
 DELETE FROM sales_reps WHERE id = 100;
+
+ROLLBACK;
+
