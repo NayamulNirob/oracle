@@ -25,7 +25,7 @@ INSERT INTO student  VALUES (student_id.nextval,
 'Nirjash','nirjash@gmail.com');
 
 INSERT INTO student  VALUES (DEFAULT,
-'Raju','raju@gmail.com');
+'Towhid','towhid@gmail.com');
 
 SELECT * FROM student;
 
