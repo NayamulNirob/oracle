@@ -1,7 +1,7 @@
 SELECT *
-FROM employees;
+FROM sales_reps;
 
-DESC seles_reps;
+DESC sales_reps;
 
 ALTER TABLE seles_reps RENAME to sales_reps;
 
