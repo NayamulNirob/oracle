@@ -1,7 +1,7 @@
 select*
 from employees;
 
-SELECT department_id, avg(salary)
+SELECT department_id, round(avg(salary))
 from employees
 where (salary >12000)
 GROUP by department_id;

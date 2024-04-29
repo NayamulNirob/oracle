@@ -37,4 +37,3 @@ SELECT employee_id, last_name, salary
   FROM employees
   WHERE job_id LIKE '%IT_PROG%';
   
- ROLLBACK;
